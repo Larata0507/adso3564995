@@ -1,5 +1,5 @@
 # ADSO 3564995
-![Profile Picture](src/imageskyky.jpg) 
+![Profile Picture](src/images/imageskyky.jpg) 
 ## Dilan Castañeda Salgado
 ### Analisis y Desarrollo de Software
 ***Centro de Procesos Industriales y Construccion***
