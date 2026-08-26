@@ -24,7 +24,7 @@ body {
             }
         }
        section {
-        h2 subtitle{
+        h2.subtitle{
             align-items: center;
             background-color: #7acb16;
             border-radius: 8px;
