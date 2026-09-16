@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>09-Tables</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            thead{
+                th{
+                    background-color: #e44a26;
+                    border: 2px solid #fff9;
+                    color: #000;
+                    padding: 0.4rem;
+                }
+            }
+        
+        tbody{
+            tr{
+                &:nth-child(even){
+                    background-color: #fff3;
+                }
+            td{
+                border: 2px solid #fff9;
+                color: #fff9;
+                padding: 0.4rem;
+            }
+        }
+    }
+    tfoot{
+        td{
+            background-color: #e44a26;
+            border: 2px solid #fff;
+            color: #000;
+            padding: 0.4rem;
+            text-align: center;
+        }
+    }
+}
+    
+    </style>
     </head>
     <body class="html">
      <nav class="goback">
@@ -21,7 +58,48 @@
             <h3>Creates tables for data display.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">Example:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FullName</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Homero</td>
+                        <td>Homero1234@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Marge</td>
+                        <td>Marge1234@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bart</td>
+                        <td>Bart1234@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lisa</td>
+                        <td>Lisa1234@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Maggie</td>
+                        <td>Maggie1234@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Simpson Family</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
         </main>
     </body>
