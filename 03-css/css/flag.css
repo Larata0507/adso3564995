@@ -1,0 +1,6 @@
+div.flag{
+    background: radial-gradient(circle,
+                                #bc002c 30%,
+                                #fff 30%);
+    height: 250px;
+}
