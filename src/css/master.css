@@ -72,6 +72,10 @@ body {
                 h3 {
                     font-weight: 300;
                 }
+                ul,ol{
+                color: #fff9ff;
+                text-align: left;
+                }
             }
            menu.mmenu {
                 a:is(:link, :visited) {
