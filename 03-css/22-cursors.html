@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22-cursors</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            div{
+                border: 2px solid #fff9;
+                height: 140px;
+                &.cursor-move      { cursor: move; }
+                &.cursor-help      { cursor: help; }
+                &.cursor-crosshair { cursor: crosshair; }
+                &.cursor-image     { cursor: url(imgs/pointer.png), default; }
+            }
+        }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +30,17 @@
         <header class="mmenu internal">
             <h1>22-Cursors</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>Property (cursor) that configures the visual icon of the mouse pointer when hovered over an element (e.g., pointer, grab, not-allowed).</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">Move:</h3>
+            <div class="cursor-move"></div>
+            <h3 class="subtitle">Help:</h3>
+            <div class="cursor-help"></div>
+            <h3 class="subtitle">Crosshair:</h3>
+            <div class="cursor-crosshair"></div>
+            <h3 class="subtitle">Image (Custom):</h3>
+            <div class="cursor-image"></div>
         </section>
     </main>
     </body>

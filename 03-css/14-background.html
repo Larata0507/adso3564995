@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14-background</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            div{
+                border: 2px solid #fff9;
+                margin: 2rem auto;
+                height: 200px;
+                width: 340px;
+                &.bg01{
+                    background-color: #663399;
+                }
+                &.bg02{
+                    background-image: url(imgs/mario.png);
+                    background-size: 67px;
+                }
+                &.bg03{
+                    background-image: url(imgs/mario.png);
+                    background-repeat: no-repeat;
+                    background-size: 67px;
+                }
+                &.bg04{
+                    background-image: url(imgs/mario.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 67px;
+                }
+                &.bg05{
+                    /*Every Propiety*/
+                    background-image: url(imgs/mario.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    /*Short Hand*/
+                    background: url(imgs/mario.png) no-repeat center /contain;
+                }
+                &.bg06{
+                    background-image: url(imgs/mario.png);
+                    background-size: 20%;
+                    background-attachment: fixed;
+                }
+            }
+        }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +60,29 @@
         <header class="mmenu internal">
             <h1>14-Background</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>Propierty sets all background styles in one declaration</h3>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-position</li>
+                <li>background-size</li>
+                <li>background-attachment</li>
+            </ul>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">background-color</h3>
+            <div class="bg01"></div>
+            <h3 class="subtitle">background-image</h3>
+            <div class="bg02"></div>
+            <h3 class="subtitle">background-repeat</h3>
+            <div class="bg03"></div>
+            <h3 class="subtitle">background-position</h3>
+            <div class="bg04"></div>
+            <h3 class="subtitle">background-size</h3>
+            <div class="bg05"></div>
+            <h3 class="subtitle">background-attachment</h3>
+            <div class="bg06"></div>
         </section>
     </main>
     </body>

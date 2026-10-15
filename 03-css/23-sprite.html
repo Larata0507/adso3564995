@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23-sprite</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            div#runner{
+                background: url(imgs/run-sprite.png)no-repeat;
+                height: 256px;
+                width: 256px;
+                margin: 2rem auto;
+                &.sp1 { background-position: calc(-256px * 0) 0; }
+                &.sp2 { background-position: calc(-256px * 1) 0; }
+                &.sp3 { background-position: calc(-256px * 2) 0; }
+                &.sp4 { background-position: calc(-256px * 3) 0; }
+                &.sp5 { background-position: calc(-256px * 4) 0; }
+                &.sp6 { background-position: calc(-256px * 5) 0; }
+
+            }
+            div#dino {
+                background: url(imgs/dino-sprite.png)no-repeat;
+                height: 128px;
+                width: 128px;
+                margin: 2rem auto;
+                &.sp1 { background-position: calc(-128px * 0) 0; }
+                &.sp2 { background-position: calc(-128px * 1) 0; }
+
+            }
+        }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -21,8 +47,40 @@
             <h3>Description.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">Runner:</h3>
+            <div id="runner" class="sp1"></div>
+            <h3 class="subtitle">Dino:</h3>
+            <div id="dino" class="sp1"></div>
         </section>
     </main>
+    <script>
+        const runner = document.getElementById("runner");
+        const runnerSprites = 6;
+        let countRunner     = 1;
+
+        setInterval(() => {
+            if(countRunner == runnerSprites) {
+                runner.className = "";
+                countRunner = 1;
+            } else {
+                runner.className = "";
+                runner.classList.add("sp" +  ++countRunner)
+            }
+        }, 3,141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273);
+
+        const runner1 = document.getElementById("dino");
+        const runnerDino = 2;
+        let countadorRunner     = 1;
+
+        setInterval(() => {
+            if(countadorRunner == runnerDino) {
+                runner1.className = "";
+                countadorRunner = 1;
+            } else {
+                runner1.className = "";
+                runner1.classList.add("sp" +  ++countadorRunner)
+            }
+        }, 3,141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273);
+    </script>
     </body>
 </html>

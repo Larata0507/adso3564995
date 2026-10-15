@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12-colors-alpha</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section figure{
+            background: url(imgs/mario.png) no-repeat center /cover;
+            display: flex;
+            height: 440px;
+            div{
+                width: 80px;
+            &.box1 {background: hsla(180, 96%, 52%, 0.60); }
+            &.box2 {background: hsla(185, 96%, 52%, 0.50); }
+            &.box3 {background: hsla(190, 96%, 52%, 0.40); }
+            &.box4 {background: hsla(195, 96%, 52%, 0.30); }
+            &.box5 {background: hsla(200, 96%, 52%, 0.20); }
+            &.box6 {background: hsla(205, 96%, 52%, 0.10); }
+        }
+    }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +34,18 @@
         <header class="mmenu internal">
             <h1>12-Colors Alpha</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>The fourth alpha channel allows you to apply opacity or transparency to the color.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">Example:</h3>
+            <figure class="mario">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+            </figure>
         </section>
     </main>
     </body>
