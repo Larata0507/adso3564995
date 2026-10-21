@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>27-box-shadow</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            div.box {
+                border: 4px solid #fff;
+                background-color: #caa0f566;
+                height: 200px;
+                width: 300px;
+                margin: 2rem auto;
+
+                &.box1 { box-shadow: 0 0 12px #fff; }
+                &.box2 { box-shadow: -10px -10px 24px 0 #fff; }
+                &.box3 { box-shadow: 0 0 20px #fff inset; }
+                &.box4 {
+                    box-shadow: 4px  4px  0 4px #ffcd00,
+                                8px  8px  0 6px #003087,
+                                12px 12px 0 8px #c8102e;
+                }
+            }
+            div.images {
+                text-align: center;
+                img{
+                    width: 160px;
+                    &:first-of-type {
+                        box-shadow: 0 0 12px 6px #fff;
+                    }
+                    &:last-of-type {
+                        filter: drop-shadow(0 0 12px #fff);
+                    }
+                }
+            }
+        }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +50,22 @@
         <header class="mmenu internal">
             <h1>27-Box Shadow</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>Property that applies outer or inner drop shadows to an element's frame, defining offsets, blur, spread, and color.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">box-shadow: 0 0 12px #fff</h3>
+            <div class="box box1"></div>
+            <h3 class="subtitle">box-shadow: -10px -10px 24px 0 #fff</h3>
+            <div class="box box2"></div>
+            <h3 class="subtitle">box-shadow: 0 0 20px #fff inset</h3>
+            <div class="box box3"></div>
+            <h3 class="subtitle">box-shadow: multiple</h3>
+            <div class="box box4"></div>
+            <h3 class="subtitle">box-shadow VS drop-shadow()</h3>
+            <div class="images">
+                <img src="imgs/mario.png">
+                <img src="imgs/mario.png">
+            </div>
         </section>
     </main>
     </body>
