@@ -5,6 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>29-new-backgrounds</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section{
+            div.multiples{
+                background: url(imgs/bg3.png),
+                            url(imgs/bg2.png),
+                            url(imgs/bg1.png);
+                height: 453px;
+                width: 320px;
+            }
+            div {
+                outline: 4px solid #fffc;
+                border-radius: 12px;
+                caret-shape: squircle;
+                margin: 1rem auto;
+                width: 342px;
+                height: 200px;
+
+                &.gradient1 {
+                    background: linear-gradient(to right, red, blue ,green, yellow, peru, gold);
+                }
+                &.gradient2 {
+                    background: linear-gradient(45deg, lime, black, lime );
+                }
+                &.gradient3 {
+                    background: linear-gradient(#ffcd00 50%, 
+                                                #003087 50%, 
+                                                #003087 75%, 
+                                                #c8102e 75%);
+                }
+                &.gradient4 {
+                    background: linear-gradient(to right, black 50%, white 50%);
+                    background-size: 25px;
+                }
+                &.gradient5 {
+                    background: radial-gradient(circle, crimson, pink);
+                }
+                &.gradient6 {
+                    background: radial-gradient(circle, yellow 15%,
+                                                        red 15%, 
+                                                        red 30%,
+                                                        blue 30%,
+                                                        blue 45%, 
+                                                        black 45%, 
+                                                        black 60%, 
+                                                        white 60%);
+                }
+                &.gradient7 {
+                    background: conic-gradient(red, green, blue);
+                }
+
+                &.mask {
+                    background: linear-gradient(to right, red, white, green);
+                    mask-image: url(imgs/mask.svg);
+                    mask-size: 100% 100%;
+                }
+            }
+
+            h4 {
+                font-size: 8rem;
+                text-align: center;
+                margin: 0;
+
+                &.clip1 {
+                    background: linear-gradient(crimson, black);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &.clip2 {
+                    background: url(imgs/bgfire.jpg) no-repeat center;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 10rem;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +97,31 @@
         <header class="mmenu internal">
             <h1>29-New Backgrounds</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>Modern background features including multiple background layers, CSS gradients (linear-gradient, radial-gradient), and background-clip.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h3 class="subtitle">Bgs Multiples:</h3>
+            <div class="multiples"></div>
+            <h3 class="subtitle">Bgs Gradients:</h3>
+            <h5>linear-gradient(to direction, color1, color2)</h5>
+            <div class="gradient1"></div>
+            <h5>linear-gradient(degrees, color1, color2)</h5>
+            <div class="gradient2"></div>
+            <h5>Colombia Flag</h5>
+            <div class="gradient3"></div>
+            <h5>Vertical Lines</h5>
+            <div class="gradient4"></div>
+            <h5>radial-gradient(shape, color1, color2)</h5>
+            <div class="gradient5"></div>
+            <h5>BullsEye</h5>
+            <div class="gradient6"></div>
+            <h5>conic-gradient(color1, color2)</h5>
+            <div class="gradient7"></div>
+            <h3 class="subtitle">Bgs Clip:</h3>
+            <h4 class="clip1">ADSO</h4>
+            <h4 class="clip2">fire</h4>
+            <h3 class="subtitle">Bg Mask:</h3>
+            <div class="mask"></div>
         </section>
     </main>
     </body>

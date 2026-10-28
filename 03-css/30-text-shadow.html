@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>30-text-shadow</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            p.txt{
+                font-size: 4rem;
+                font-weight: 600;
+                margin: 1rem 0;
+                text-align: center;
+
+                &.txt1 {
+                    color: #000;
+                    text-shadow: 0 0 6px white;
+                }
+                &.txt2 {
+                    color: #000;
+                    text-shadow: -4px -4px 4px white;
+                }
+                &.txt3 {
+                    text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff;
+                }
+                &.txt4 {
+                    color: #fff;
+                    letter-spacing: 0.6rem;
+                    text-shadow: -5px 0 0 #fcdd09,
+                                 -10px 0 0 #078930;
+                }
+            }
+        }
+    </style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +46,14 @@
         <header class="mmenu internal">
             <h1>30-Text Shadow</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3> Property that adds shadow effects directly to text content, taking values for offset, blur radius, and color.</h3>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <h2 class="subtitle">Examples:</h2>
+            <p class="txt txt1">ADSO</p>
+            <p class="txt txt2">C.P.I.C</p>
+            <p class="txt txt3">SENA</p>
+            <p class="txt txt4">Caldas</p>
         </section>
     </main>
     </body>
