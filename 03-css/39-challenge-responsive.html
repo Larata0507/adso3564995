@@ -1,28 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39-challenge-responsive</title>
-    <link rel="stylesheet" href="../src/css/master.css">
-    </head>
-    <body class="css">
-     <nav class="goback">
-            <a href="index.html">
-                 <svg xmlns=< xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
-                    </path>
-                </svg>
-            </a> 
-        </nav>
+    <title>Real Madrid | Jugadores</title>
+    <link rel="icon" href="imgs/logo_realmadrid_200px.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+        body {
+            background: #013571 url(imgs/fondo_web_blanco_azul_dorado.png) center / cover no-repeat fixed;
+            color: #fff;
+            font-family: "Jacquard 24", system-ui;
+            padding: 0;
+            margin: 0;
+
+            main {
+                border: 5px solid #fff;
+                padding: 1rem;
+                margin: 2rem auto;
+                width: 1238px;
+
+                header {
+                    div.marca {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p.titulo {
+                            font-size: 6.5rem;
+                            color: #FDBB21;
+                            margin: 0;
+                        }
+
+                        figure.logo {
+                            background: url(imgs/logo_realmadrid_200px.png) no-repeat center;
+                            padding: 0;
+                            height: 273px;
+                            margin: 0 1.5rem;
+                            width: 200px;
+                        }
+                    }
+
+                    nav {
+                        text-align: center;
+                        margin: 2rem 0 1rem;
+
+                        div.real {
+                            display: inline-block;
+                            position: relative;
+                            margin: 0 10px 20px;
+                            width: 270px;
+                            height: 330px;
+                            background-repeat: no-repeat;
+                            background-position: top;
+                            background-size: 270px;
+
+                            &.kylian {
+                                background-image: url(imgs/tortuga.jpg);
+                                border-radius: 23px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+
+                            &.arda {
+                                background-image: url(imgs/guler.jpg);
+                                border-radius: 24px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+
+                            &.jude {
+                                background-image: url(imgs/beligol.jpg);
+                                border-radius: 25px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+
+                            &.yan {
+                                background-image: url(imgs/diamonde.jpg);
+                                border-radius: 25px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+
+                            a:is(:link, :visited) {
+                                position: absolute;
+                                bottom: 0;
+                                corner-shape: squircle;
+                                border-radius: 0px 0px 40px 40px;
+                                left: 0;
+                                right: 0;
+                                background: rgba(0, 0, 0, 0.75);
+                                color: #FDBB21;
+                                font-size: 1.4rem;
+                                padding: 1rem 0;
+                                text-align: center;
+                                text-decoration: none;
+                                transition: background 0.4s, color 0.4s;
+
+                                &:hover {
+                                    background: #FDBB21;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    article.perfil {
+                        display: flex;
+                        background: rgba(0, 0, 0, 0.55);
+                        padding: 1rem;
+                        margin-bottom: 2rem;
+
+                        div.foto {
+                            width: 280px;
+                            height: 340px;
+                            background-repeat: no-repeat;
+                            background-position: top;
+                            background-size: 280px;
+
+                            &.cucurella {
+                                background-image: url(imgs/cucurella.jpg);
+                                border-radius: 20px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+
+                            &.konate {
+                                background-image: url(imgs/konate.jpg);
+                                border-radius: 20px;
+                                box-shadow: 15px 15px 40px #ffff;
+                            }
+                        }
+
+                        div.texto {
+                            margin-left: 2rem;
+                            width: 860px;
+
+                            h2 {
+                                margin: 0 0 1rem;
+                                font-size: 2.8rem;
+                                color: #FDBB21;
+                                text-align: left;
+                                border-bottom: 2px solid #fff9;
+                            }
+
+                            p {
+                                margin: 0;
+                                font-family: system-ui, sans-serif;
+                                line-height: 1.8rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:1288px){
+            body {
+                main {
+                    width: 800px;
+
+                    header {
+                        div.marca {
+                            p.titulo {
+                                font-size: 4.5rem;
+                            }
+                        }
+
+                        nav {
+                            div.real {
+                                width: 300px;
+                                height: 365px;
+                                background-size: 300px;
+                            }
+                        }
+                    }
+                    section {
+                        article.perfil {
+                            div.texto {
+                                width: 420px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:860px){
+            body {
+                main {
+                    width: 318px;
+
+                    header {
+                        div.marca {
+                            display: block;
+                            text-align: center;
+
+                            p.titulo {
+                                font-size: 4rem;
+                            }
+
+                            figure.logo {
+                                margin: 0 auto;
+                            }
+                        }
+
+                        nav {
+                            div.real {
+                                width: 280px;
+                                height: 340px;
+                                background-size: 280px;
+                            }
+                        }
+                    }
+                    section {
+                        article.perfil {
+                            display: block;
+
+                            div.foto {
+                                margin: 0 auto 1rem;
+                            }
+
+                            div.texto {
+                                margin-left: 0;
+                                width: 286px;
+
+                                h2 {
+                                    font-size: 2.2rem;
+                                }
+
+                                p {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
     <main>
-        <header class="mmenu internal">
-            <h1>39-Challenge Responsive</h1>
-            <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Practical exercise building a responsive webpage layout that adapts smoothly across mobile, tablet, and desktop viewports.</h3>
+        <header>
+            <div class="marca">
+                <p class="titulo">REAL</p>
+                <figure class="logo"></figure>
+                <p class="titulo">MADRID</p>
+            </div>
+            <nav>
+                <div class="real kylian">
+                    <a href="#">Kylian Mbappé</a>
+                </div>
+                <div class="real arda">
+                    <a href="#">Arda Güler</a>
+                </div>
+                <div class="real jude">
+                    <a href="#">Jude Bellingham</a>
+                </div>
+                <div class="real yan">
+                    <a href="#">Yan Diamonde</a>
+                </div>
+            </nav>
         </header>
         <section>
-            <h3 class="subtitle">Subtitle:</h3>
+            <article class="perfil">
+                <div class="foto cucurella"></div>
+                <div class="texto">
+                    <h2>Marc Cucurella</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo quaerat quidem, excepturi officiis, et exercitationem repellendus, sapiente veniam accusamus dolorem. Iusto tempore accusantium ut quibusdam saepe incidunt, distinctio praesentium ullam natus optio magnam explicabo dolore nostrum voluptatem voluptas. Enim ipsum iure, cum amet sed reprehenderit ducimus commodi harum veritatis nostrum laborum nesciunt dolor eius, vitae illo expedita doloribus ipsam.</p>
+                </div>
+            </article>
+
+            <article class="perfil">
+                <div class="foto konate"></div>
+                <div class="texto">
+                    <h2>Ibrahima Konaté</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero ad reiciendis dolorem quo velit nesciunt laboriosam possimus ipsum numquam quis ipsam doloribus minus illum itaque ut magnam a, omnis est eligendi, alias voluptatum cum eaque dolore! Voluptates asperiores, dignissimos voluptatibus vero ea magni fugiat tenetur inventore aperiam enim ipsum cum libero nulla eos! Quidem iste dolore dolores quia possimus.</p>
+                </div>
+            </article>
         </section>
     </main>
-    </body>
+</body>
 </html>
