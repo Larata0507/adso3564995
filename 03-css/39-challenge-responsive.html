@@ -23,21 +23,33 @@
 
                 header {
                     div.marca {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        position: relative;
+                        height: 273px;
 
                         p.titulo {
+                            position: absolute;
+                            top: 0;
                             font-size: 6.5rem;
+                            line-height: 260px;
                             color: #FDBB21;
                             margin: 0;
+
+                            &.izquierda {
+                                right: 50%;
+                                margin-right: 124px;
+                            }
+
+                            &.derecha {
+                                left: 50%;
+                                margin-left: 124px;
+                            }
                         }
 
                         figure.logo {
                             background: url(imgs/logo_realmadrid_200px.png) no-repeat center;
                             padding: 0;
                             height: 273px;
-                            margin: 0 1.5rem;
+                            margin: 0 auto;
                             width: 200px;
                         }
                     }
@@ -93,7 +105,7 @@
                                 padding: 1rem 0;
                                 text-align: center;
                                 text-decoration: none;
-                                transition: background 0.4s, color 0.4s;
+                                
 
                                 &:hover {
                                     background: #FDBB21;
@@ -106,12 +118,15 @@
 
                 section {
                     article.perfil {
-                        display: flex;
+                        position: relative;
                         background: rgba(0, 0, 0, 0.55);
                         padding: 1rem;
                         margin-bottom: 2rem;
 
                         div.foto {
+                            position: absolute;
+                            top: 1rem;
+                            left: 1rem;
                             width: 280px;
                             height: 340px;
                             background-repeat: no-repeat;
@@ -132,7 +147,8 @@
                         }
 
                         div.texto {
-                            margin-left: 2rem;
+                            margin-left: 312px;
+                            min-height: 340px;
                             width: 860px;
 
                             h2 {
@@ -163,7 +179,7 @@
                     header {
                         div.marca {
                             p.titulo {
-                                font-size: 4.5rem;
+                                font-size: 4rem;
                             }
                         }
 
@@ -193,11 +209,20 @@
 
                     header {
                         div.marca {
-                            display: block;
+                            height: auto;
                             text-align: center;
 
                             p.titulo {
+                                position: static;
                                 font-size: 4rem;
+
+                                &.izquierda {
+                                    margin-right: 0;
+                                }
+
+                                &.derecha {
+                                    margin-left: 0;
+                                }
                             }
 
                             figure.logo {
@@ -215,14 +240,14 @@
                     }
                     section {
                         article.perfil {
-                            display: block;
-
                             div.foto {
+                                position: static;
                                 margin: 0 auto 1rem;
                             }
 
                             div.texto {
                                 margin-left: 0;
+                                min-height: 0;
                                 width: 286px;
 
                                 h2 {
@@ -244,9 +269,9 @@
     <main>
         <header>
             <div class="marca">
-                <p class="titulo">REAL</p>
+                <p class="titulo izquierda">REAL</p>
                 <figure class="logo"></figure>
-                <p class="titulo">MADRID</p>
+                <p class="titulo derecha">MADRID</p>
             </div>
             <nav>
                 <div class="real kylian">
