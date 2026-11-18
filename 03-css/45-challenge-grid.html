@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>45-challenge-grid</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+    div.imagenes {
+        display: grid;
+        grid-template-areas: "uno    dos   tres"
+                             "cuatro dos   cinco"
+                             "seis   seis  siete";
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 0.2rem;
+        margin: 2rem auto;
+        width: calc(300px + 0.4rem);
+
+        div {
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 3px solid #fff;
+            border-radius: 8px;
+
+            &:first-child {
+                grid-area: uno;
+                background-image: url(imgs/Bran.png);
+            }
+            &:nth-child(2) {
+                grid-area: dos;
+                background-image: url(imgs/game-of-thrones-logo-vertical.jpg);
+                background-position: center;
+            }
+            &:nth-child(3) {
+                grid-area: tres;
+                background-image: url(imgs/Cersei.jpg);
+            }
+            &:nth-child(4) {
+                grid-area: cuatro;
+                background-image: url(imgs/jaime1.jpg);
+            }
+            &:nth-child(5) {
+                grid-area: cinco;
+                background-image: url(imgs/tyrion.jpg);
+            }
+            &:nth-child(6) {
+                grid-area: seis;
+                background-image: url(imgs/jhon.jpg);
+            }
+            &:last-child {
+                grid-area: siete;
+                background-image: url(imgs/targeryen.jpg);
+            }
+        }
+    }
+
+    div.galeria {
+        display: grid;
+        grid-template-areas: "uno uno  dos   tres   "
+                             "uno uno  cuatro cuatro"
+                             "cinco seis  cuatro cuatro";
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 0.2rem;
+        margin: 2rem auto;
+        width: calc(400px + 0.6rem);
+
+        div {
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 3px solid #fff;
+            border-radius: 8px;
+
+            &:first-child {
+                grid-area: uno;
+                background-image: url(imgs/breaking-bad.jpg);
+            }
+            &:nth-child(2) {
+                grid-area: dos;
+                background-image: url(imgs/ww.jpg);
+            }
+            &:nth-child(3) {
+                grid-area: tres;
+                background-image: url(imgs/hank.jpg);
+            }
+            &:nth-child(4) {
+                grid-area: cuatro;
+                background-image: url(imgs/jesse.jpg);
+            }
+            &:nth-child(5) {
+                grid-area: cinco;
+                background-image: url(imgs/actor1.webp);
+            }
+            &:last-child {
+                grid-area: seis;
+                background-image: url(imgs/saul.jpg);
+            }
+        }
+    }
+</style>
     </head>
     <body class="css">
      <nav class="goback">
@@ -18,10 +112,28 @@
         <header class="mmenu internal">
             <h1>45-Challenge Grid</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3>Description.</h3>
+            <h3>Irregular image gallery</h3>
         </header>
         <section>
             <h3 class="subtitle">Subtitle:</h3>
+            <div class="imagenes">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="galeria">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </section>
     </main>
     </body>
