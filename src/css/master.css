@@ -9,8 +9,61 @@ body {
     font-family: Poppins;
     min-height: 100dvh;
 
+    &.js {
+        background: url(../images/fondo-js-unido.png) center / cover no-repeat fixed;
+        background-attachment: fixed;
+        color: #f0db4faa;
+        main {
+            header.mmenu {
+                h1 {
+                    border-bottom: 2px solid #f0db4faa;
+                }
+                img {
+                    border: 4px solid #f0db4faa;
+                }
+                h3 {
+                    font-weight: 300;
+                }
+                ul, ol {
+                    color: #fff9;
+                    text-align: left;
+                }
+            }
+           menu.mmenu {
+                a:is(:link, :visited) {
+                    &:hover {
+                        background-color: #f0db4f;
+                        aside {
+                            h4 {
+                                color: #0009;
+                            }
+                        }
+                    }
+                    span {
+                        background-color: #f0db4f;
+                        height: 50px;
+                        font-size: 1.4rem;
+                        width: 50px;
+                        color: #0009;
+                    }
+                    aside {
+                        h4 {
+                            color: #fff9;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+           } 
+           section {
+                p, ul, ol {
+                    color: #fff9;
+                }
+            }
+        }
+    }
+
     &.css {
-        background: #000 url(../images/fondo-css-horizontal-morado.png) center / cover no-repeat fixed;
+        background: url(../images/fondo-css-horizontal-morado.png) center / cover no-repeat fixed;
         background-attachment: fixed;
         color: #caa0f5aa;
         main {

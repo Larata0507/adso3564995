@@ -1,24 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>04-Javascript</title>
-        <link rel="stylesheet" href="../src/css/master.css">
-    </head>
-
-    <body class="javascript">
-        <nav class="goback">
-            <a href="../index.html">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4Z"></path></svg>
-            </a> 
-        </nav> 
-        <main>
-            <header class="mmenu">
-                <h1>04-Javascript</h1>
-                <h2></h2>
-                <img src="../src/images/" alt="Javascript">
-            </header>
-        </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-Javascript</title>
+<link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        body {
+            main {
+                width: 80%;
+                div.menus {
+                    display: flex;
+                    align-items: start;
+                    margin-block: 2rem;
+                    gap: 1rem;
+                    menu {
+                        margin-block: 0;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 840px) {
+            div.menus {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="js">
+    <nav class ="goback">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4Z">
+            </path>
+        </svg>
+        </a>
+    </nav>
+    <main>
+        <header class ="mmenu">
+            <h1>04-Javascript</h1>
+            <img src="../src/images/logo-js.png" alt="JS">
+            <h3>Programming language for web development and interactive applications.</h3>
+        </header>
+        <div class="menus">
+            <menu class="mmenu">
+                <a href="01-write.html">
+                    <span>01</span>
+                    <aside>
+                        <h4>Write JS</h4>
+                    </aside>
+                </a>
+                <a href="02-comments.html">
+                    <span>02</span>
+                    <aside>
+                        <h4>Comments</h4>
+                    </aside>
+                </a>
+                <a href="03-get-elements.html">
+                    <span>03</span>
+                    <aside>
+                        <h4>Get Elements</h4>
+                    </aside>
+                </a>
+                <a href="04-data-types.html">
+                    <span>04</span>
+                    <aside>
+                        <h4>Data Types</h4>
+                    </aside>
+                </a>
+                <a href="05-methods-object.html">
+                    <span>05</span>
+                    <aside>
+                        <h4>Methods Object</h4>
+                    </aside>
+                </a>
+                <a href="06-types-objects.html">
+                    <span>06</span>
+                    <aside>
+                        <h4>Types Objects</h4>
+                    </aside>
+                </a>
+                <a href="07-class-vehicle.html">
+                    <span>07</span>
+                    <aside>
+                        <h4>Class Vehicle</h4>
+                    </aside>
+                </a>
+                <a href="08-functions.html">
+                    <span>08</span>
+                    <aside>
+                        <h4>Functions</h4>
+                    </aside>
+                </a>
+                <a href="09-operators-arithmetics.html">
+                    <span>09</span>
+                    <aside>
+                        <h4>Operators Arithmetics</h4>
+                    </aside>
+                </a>
+                <a href="10-operators-assignment.html">
+                    <span>10</span>
+                    <aside>
+                        <h4>Operators Assignment</h4>
+                    </aside>
+                </a>
+                <a href="11-operators-comparison.html">
+                    <span>11</span>
+                    <aside>
+                        <h4>Operators Comparison</h4>
+                    </aside>
+                </a>
+                <a href="12-operators-logical.html">
+                    <span>12</span>
+                    <aside>
+                        <h4>Operators Logical</h4>
+                    </aside>
+                </a>
+                <a href="13-challenge-calculator.html">
+                    <span>13</span>
+                    <aside>
+                        <h4>Challenge Calculator</h4>
+                    </aside>
+                </a>
+                <a href="14-pop-up-windows.html">
+                    <span>14</span>
+                    <aside>
+                        <h4>Pop Up Windows</h4>
+                    </aside>
+                </a>
+                <a href="15-conditionals.html">
+                    <span>15</span>
+                    <aside>
+                        <h4>Conditionals</h4>
+                    </aside>
+                </a>
+                <a href="16-challenge-conditionals.html">
+                    <span>16</span>
+                    <aside>
+                        <h4>Challenge Conditionals</h4>
+                    </aside>
+                </a>
+            </menu>
+            <menu class="mmenu">
+                <a href="17-loops.html">
+                    <span>17</span>
+                    <aside>
+                        <h4>Loops</h4>
+                    </aside>
+                </a>
+                <a href="18-pokedex-api-example.html">
+                    <span>18</span>
+                    <aside>
+                        <h4>Pokedex API</h4>
+                    </aside>
+                </a>
+                <a href="19-events.html">
+                    <span>19</span>
+                    <aside>
+                        <h4>Events</h4>
+                    </aside>
+                </a>
+                <a href="20-methods-strings.html">
+                    <span>20</span>
+                    <aside>
+                        <h4>Methods Strings</h4>
+                    </aside>
+                </a>
+                <a href="21-methods-numbers.html">
+                    <span>21</span>
+                    <aside>
+                        <h4>Methods Numbers</h4>
+                    </aside>
+                </a>
+                <a href="22-methods-mathematics.html">
+                    <span>22</span>
+                    <aside>
+                        <h4>Methods Mathematics</h4>
+                    </aside>
+                </a>
+                <a href="23-challenge-baloto.html">
+                    <span>23</span>
+                    <aside>
+                        <h4>Challenge Baloto</h4>
+                    </aside>
+                </a>
+                <a href="24-methods-dates.html">
+                    <span>24</span>
+                    <aside>
+                        <h4>Methods Dates</h4>
+                    </aside>
+                </a>
+                <a href="25-methods-arrays.html">
+                    <span>25</span>
+                    <aside>
+                        <h4>Methods Arrays</h4>
+                    </aside>
+                </a>
+                <a href="26-challenge-arrays.html">
+                    <span>26</span>
+                    <aside>
+                        <h4>Challenge Arrays</h4>
+                    </aside>
+                </a>
+                <a href="27-events-time.html">
+                    <span>27</span>
+                    <aside>
+                        <h4>Events Time</h4>
+                    </aside>
+                </a>
+                <a href="28-challenge-events-time.html">
+                    <span>28</span>
+                    <aside>
+                        <h4>Challenge Events Time</h4>
+                    </aside>
+                </a>
+                <a href="29-localstorage.html">
+                    <span>29</span>
+                    <aside>
+                        <h4>Local Storage</h4>
+                    </aside>
+                </a>
+                <a href="30-map-filter-reduce.html">
+                    <span>30</span>
+                    <aside>
+                        <h4>Map | Filter | Reduce</h4>
+                    </aside>
+                </a>
+                <a href="31-json-data.html">
+                    <span>31</span>
+                    <aside>
+                        <h4>JSON Data</h4>
+                    </aside>
+                </a>
+                <a href="32-onenterframe.html">
+                    <span>32</span>
+                    <aside>
+                        <h4>On Enter Frame</h4>
+                    </aside>
+                </a>
+            </menu>
+        </div>
+    </main>
+</body>
 </html>

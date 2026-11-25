@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-Get Elements</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+            ul {
+                padding: 0;
+            }
+            ul li,
+            figure.animal {
+                background-color: #0006;
+                border-radius: 2px;
+                height: 25px;
+                margin: 2px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                zoom: 2.5;
+            }
+        }
+    </style>
+</head>
+<body class="js">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>03-Get Elements</h1>
+            <img src="../src/images/logo-js.png" alt="JS">
+            <h3>Access and manipulate HTML elements using JavaScript.</h3>
+        </header>
+       <section>
+            <h3 class="subtitle">Get Element By Id:</h3>
+            <h4 id="year"></h4>
+            <h3>Get Elements By Tag Name:</h3>
+            <ul>
+                <li>🍌</li>
+                <li>🍎</li>
+                <li>🫐</li>
+                <li>🍊</li>
+                <li>🍒</li>
+            </ul>
+            <h4></h4>
+            <h3 class="subtitle">Get Elements By Class Name</h3>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <p class="paragraph">Lorem ipsum dolor</p>
+            <h3 class="subtitle">Query Selector & Query Selector All</h3>
+            <figure class="animal first">🦊</figure>
+            <figure class="animal">🐼</figure>
+            <figure class="animal">🐷</figure>
+        </section>
+    </main>
+    <script>
+        // 01 Get Element By Id
+        const year = document.getElementById('year');
+        const today = new Date;
+        year.textContent = "Current Year: "+today.getFullYear();
+        year.style.color = '#fff9';
+        year.style.fontSize = '1.6rem';
+
+        // 02 Get Element By Tag Name
+        const fruits = document.getElementsByTagName('li');
+        const h4s = document.getElementsByTagName('h4');
+        h4s[1].textContent = `There are: ${fruits.length} fruits`;
+        h4s[1].style.color = '#fff9';
+        h4s[1].style.fontSize = '1.2rem';
+
+        h4s[1].innerHTML += `<br> The first fruit is: ${fruits[0].textContent}`
+        h4s[1].innerHTML += `<br> The last fruit is: ${fruits[fruits.length-1].textContent}`
+
+    </script>
+</body>
+</html>
